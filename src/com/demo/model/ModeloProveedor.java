@@ -5,7 +5,8 @@
  */
 
 package com.demo.model;
-import com.demo.model.entity.Usuario;
+
+import com.demo.model.entity.Proveedor;
 import java.util.Iterator;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
@@ -14,7 +15,7 @@ import org.hibernate.SessionFactory;
  * @author Carlos Longobardi
  */
 public class ModeloProveedor extends Model{
-    static public boolean logIn(Usuario user){
+    static public boolean logIn(Proveedor user){
         boolean band= false;
         Session session = null;
         try{
@@ -25,10 +26,10 @@ public class ModeloProveedor extends Model{
             session.beginTransaction();
 
             //armamos la consulta HQL
-            String HQL_QUERY ="from proveedor user where user.descripcion = :userDescripcion "; //and user.clave = :userClave";
+            String HQL_QUERY ="from Proveedor user where user.descripcion = :userDescripcion "; //and user.clave = :userClave";
             org.hibernate.Query query = session.createQuery(HQL_QUERY);
             //Preparar query statement
-            query.setParameter("userDescripcion",user.getEmail());
+            query.setParameter("userDescripcion",user.getDescripcion());
             //query.setParameter("userClave", user.getClave());
             
             System.out.println("Reading values");

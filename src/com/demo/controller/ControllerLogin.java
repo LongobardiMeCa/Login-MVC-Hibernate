@@ -8,37 +8,33 @@ package com.demo.controller;
 import com.demo.model.ModeloUsuario;
 import com.demo.model.entity.Usuario;
 
-/**
- *
- * @author whiston
- */
+
 public class ControllerLogin extends Controller {
     
     public ControllerLogin(){
     
     }
     
-    public boolean logIn(String usuario, String clave){
-        boolean band = false;
-        
-        Usuario user = new Usuario(usuario, clave);
-        
+    public boolean logIn(String email, String clave){
+       boolean band;
+        Usuario user= new Usuario(email, clave);
         band = ModeloUsuario.logIn(user);
-        
         return band;
     }
     
     
-    public long logUp(){
-        long status = 0;
-        
+    public boolean logUp(String nom, String apePater, String apeMater,String email, String clave){
+       boolean status=true;
+//        Usuario envio = new Usuario(nom,apePater,apeMater,email,clave);
+//        status=ModeloUsuario.LogUp(envio);
         return status;
     }
     
-    public long RecuperarClave(){
-        long status = 0;
-        
-        return status;
+    public String RecuperarClave(String email){
+        String clave="";
+//        Usuario recu = new Usuario(email);
+//        clave=""+ModeloUsuario.LogRecu(recu);
+        return clave;
     }
     
 }
