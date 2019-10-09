@@ -42,4 +42,8 @@ Contributor(s):
 <hibernate-reverse-engineering>
   <schema-selection match-catalog="ventas"/>
   <table-filter match-name="proveedor"/>
+  <table-filter match-name="proveedor"/>
+  <table-filter match-name="proveedor"/>
+  <table-filter match-name="proveedor"/>
+  <table-filter match-name="proveedor"/>
 </hibernate-reverse-engineering>

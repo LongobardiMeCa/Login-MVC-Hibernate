@@ -11,30 +11,28 @@ package com.demo.model.entity;
  * @author Carlos Longobardi
  */
 public class Proveedor {
-    private long idProv;
-    private String descripcion;
+    private long id_Provee;
+    private String descrip_Provee;
 
-    public Proveedor(long idProv, String descripcion) {
-        this.idProv = idProv;
-        this.descripcion = descripcion;
+    public Proveedor(long id_Provee, String descrip_Provee) {
+        this.id_Provee = id_Provee;
+        this.descrip_Provee = descrip_Provee;
     }
 
-    public long getIdProv() {
-        return idProv;
+    public long getId_Provee() {
+        return id_Provee;
     }
 
-    public void setIdProv(long idProv) {
-        this.idProv = idProv;
+    public void setId_Provee(long id_Provee) {
+        this.id_Provee = id_Provee;
     }
 
-    public String getDescripcion() {
-        return descripcion;
+    public String getDescrip_Provee() {
+        return descrip_Provee;
     }
 
-    public void setDescripcion(String descripcion) {
-        this.descripcion = descripcion;
+    public void setDescrip_Provee(String descrip_Provee) {
+        this.descrip_Provee = descrip_Provee;
     }
-    
-    
     
 }
