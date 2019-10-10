@@ -155,36 +155,36 @@ public class VistaLogin extends javax.swing.JFrame {
 
     private void jBtnLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnLoginActionPerformed
         // TODO add your handling code here:
-        
-        
-        boolean band;String usuario, clave;
-        usuario = this.JtxtUsuario.getText();
-        clave = this.jTxtClave.getText();
-        band = this.cLogin.logIn(usuario, clave);
-        System.out.println("f"+band);
-        if(band){
-            //login Correcto
-            JOptionPane.showMessageDialog(this, "Login Valida");
-            
-        }else{
-            //login incorrecto
-            JOptionPane.showMessageDialog(this, "Login Invalido");
-        }
+//        
+//        
+//        boolean band;String usuario, clave;
+//        usuario = this.JtxtUsuario.getText();
+//        clave = this.jTxtClave.getText();
+//        band = this.cLogin.logIn(usuario, clave);
+//        System.out.println("f"+band);
+//        if(band){
+//            //login Correcto
+//            JOptionPane.showMessageDialog(this, "Login Valida");
+//            
+//        }else{
+//            //login incorrecto
+//            JOptionPane.showMessageDialog(this, "Login Invalido");
+//        }
     }//GEN-LAST:event_jBtnLoginActionPerformed
 
     private void jBtnLogupActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnLogupActionPerformed
         // TODO add your handling code here:
-        VistaRegistro most= new VistaRegistro();
-        most.setVisible(true);
-        most.setLocationRelativeTo(null);
+//        VistaRegistro most= new VistaRegistro();
+//        most.setVisible(true);
+//        most.setLocationRelativeTo(null);
     
     }//GEN-LAST:event_jBtnLogupActionPerformed
 
     private void jBtnRecuperarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnRecuperarActionPerformed
         // TODO add your handling code here:
-        VistaRecuperar recup= new VistaRecuperar();
-        recup.setVisible(true);
-        recup.setLocationRelativeTo(null);
+//        VistaRecuperar recup= new VistaRecuperar();
+//        recup.setVisible(true);
+//        recup.setLocationRelativeTo(null);
         
     }//GEN-LAST:event_jBtnRecuperarActionPerformed
 

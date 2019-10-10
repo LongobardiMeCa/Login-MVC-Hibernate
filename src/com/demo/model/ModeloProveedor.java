@@ -29,7 +29,7 @@ public class ModeloProveedor extends Model{
             String HQL_QUERY ="from Proveedor user where user.descripcion = :userDescripcion "; //and user.clave = :userClave";
             org.hibernate.Query query = session.createQuery(HQL_QUERY);
             //Preparar query statement
-            query.setParameter("userDescripcion",user.getDescripcion());
+            //Revisar - query.setParameter("userDescripcion",user.getDescripcion());
             //query.setParameter("userClave", user.getClave());
             
             System.out.println("Reading values");
