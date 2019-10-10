@@ -47,5 +47,11 @@ Contributor(s):
     <property name="hibernate.connection.username">root</property>
     <property name="hibernate.connection.password">root</property>
     <mapping resource="com/demo/model/persistencia/Usuario.hbm.xml"/>
+    <mapping resource="com/demo/model/persistencia/Marca.xml"/>
+    <mapping resource="com/demo/model/persistencia/Marca.hbm.xml"/>
+    <mapping resource="com/demo/model/persistencia/Proveedor.hbm.xml"/>
+    <mapping resource="com/demo/model/persistencia/Presentacion.hbm.xml"/>
+    <mapping resource="com/demo/model/persistencia/Producto.hbm.xml"/>
+    <mapping resource="com/demo/model/persistencia/Zona.hbm.xml"/>
   </session-factory>
 </hibernate-configuration>

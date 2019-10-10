@@ -3,7 +3,7 @@
 "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 <!-- Generated 26-sep-2019 11:39:24 by Hibernate Tools 4.3.1 -->
 <hibernate-mapping>
-    <class name="com.demo.model.persistencia.Usuario" table="usuario" catalog="demomvc" optimistic-lock="version">
+    <class name="com.demo.model.persistencia.Usuario" table="usuario" catalog="" optimistic-lock="version">
         <id name="id" type="java.lang.Integer">
             <column name="id" />
             <generator class="identity" />

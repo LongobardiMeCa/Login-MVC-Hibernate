@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+  "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+  "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+
+    <class name="com.demo.model.persistencia.Producto" table ="producto" catalog="ventas" optimistic-lock="version">
+        <id name="id_producto" type="java.lang.Integer">
+            <column name="id_producto" />
+            <generator class="identity" />
+        </id>
+        <property name="codigo" type="int">
+            <column name="codigo" length="11" not-null="false"/>
+        </property>
+        <property name="descripcion_producto" type="string">
+            <column name="descripcion_producto" length="1000" not-null="true" />
+        </property>
+        <property name="precio" type= "double" >
+            <column name="precio" length ="" not-null="true"/>
+        </property>
+        <property name="stock" type="int">
+            <column name ="stock" length="11" not-null="true"/>
+        </property>
+        <property name="iva" type="int">
+            <column name="iva" length="11" not-null="false"/>
+        </property>
+        <property name="peso" type="double">
+            <column name="peso" length="" not-null="false" />
+        </property>
+        <property name="id_marca" type="int">
+            <column name="id_marca" length="11" not-null="false"/>   
+        </property>
+        <property name="id_presentacion" type="int">
+            <column name="id_presentacion" length="11" not-null="false" />
+        </property>
+        <property name="id_proveedor" type="int">
+            <column name="id_proveedor" length="11" not-null="false"/>
+        </property>
+        <property name="id_zona" type="int">
+            <column name="id_zona" length="11" not-null="false">
+        </property>
+
+        
+        
+        
+        
+    </class>
+
+</hibernate-mapping>

@@ -6,10 +6,36 @@
 
 package com.demo.model.persistencia;
 
+import java.io.Serializable;
+
 /**
  *
  * @author Carlos Longobardi
  */
-public class Proveedor {
+public class Proveedor implements Serializable{
+    private long id_Provee;
+    private String descrip_Provee;
+
+    public Proveedor(long id_Provee, String descrip_Provee) {
+        this.id_Provee = id_Provee;
+        this.descrip_Provee = descrip_Provee;
+    }
+
+    public long getId_Provee() {
+        return id_Provee;
+    }
+
+    public void setId_Provee(long id_Provee) {
+        this.id_Provee = id_Provee;
+    }
+
+    public String getDescrip_Provee() {
+        return descrip_Provee;
+    }
+
+    public void setDescrip_Provee(String descrip_Provee) {
+        this.descrip_Provee = descrip_Provee;
+    }
+    
     
 }
